@@ -1,3 +1,38 @@
+x11proto-fixes (1:5.0-2) unstable; urgency=low
+
+  * Mark x11proto-fixes-dev Multi-Arch: foreign
+  * Install .pc file to /usr/share/pkgconfig instead of /usr/lib/pkgconfig.
+
+ -- Steve Langasek <vorlon@debian.org>  Fri, 17 Jun 2011 08:49:26 -0700
+
+x11proto-fixes (1:5.0-1) unstable; urgency=low
+
+  * New upstream release:
+    - Pointer barriers.
+  * Update debian/copyright from upstream COPYING.
+
+ -- Cyril Brulebois <kibi@debian.org>  Tue, 08 Mar 2011 17:52:51 +0100
+
+x11proto-fixes (1:4.1.2-1) unstable; urgency=low
+
+  [ Julien Cristau ]
+  * Rename the build directory to not include DEB_BUILD_GNU_TYPE for no
+    good reason.  Thanks, Colin Watson!
+  * Remove myself from Uploaders
+
+  [ Robert Hooker ]
+  * New upstream release.
+
+  [ Cyril Brulebois ]
+  * Update debian/copyright.
+  * Install fixesproto.txt with dh_install rather than with
+    dh_installdocs.
+  * Switch from --list-missing to --fail-missing for additional safety.
+  * No longer pass --disable-shared, this option is gone.
+  * Add myself to Uploaders.
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 03 Nov 2010 23:44:17 +0100
+
 x11proto-fixes (1:4.1.1-2) unstable; urgency=low
 
   * Upload to unstable.
